@@ -1,0 +1,76 @@
+// fonts
+.title {
+    font-family: $font_family_english;
+    font-size: $font_size_section_title;
+    font-weight: $font_weight_semi_bold;
+    line-height: $line_height_section_title;
+    letter-spacing: $letter_spacing_section_title;
+
+    @media (max-width: 1024px) {
+        font-size: $font_size_tablet_section_title;
+    }
+
+    @media (max-width: 375px) {
+        font-size: $font_size_mobile_section_title;
+        letter-spacing: $letter_spacing_mobile_section_title;
+    }
+}
+
+.paragraph {
+    font-family: $font_family_korean;
+    font-size: $font_size_paragraph;
+    font-weight: $font_weight_regular;
+    line-height: $line_height_paragraph;
+    letter-spacing: $letter_spacing_paragraph;
+
+    @media (max-width: 375px) {
+        font-size: $font_size_mobile_paragraph;
+        line-height: $line_height_mobile_paragraph;
+    }
+}
+
+.caption {
+    font-family: $font_family_korean;
+    font-size: $font_size_caption;
+    font-weight: $font_weight_regular;
+    line-height: $line_height_caption;
+    letter-spacing: $letter_spacing_caption;
+
+    @media (max-width: 375px) {
+        font-size: $font_size_mobile_caption;
+    }
+}
+
+.button {
+    font-family: $font_family_english;
+    font-size: $font_size_button;
+    font-weight: $font_weight_medium;
+    line-height: $line_height_button;
+    letter-spacing: $letter_spacing_button;
+
+    @media (max-width: 375px) {
+        font-size: $font_size_mobile_button;
+    }
+}
+
+// container
+.container {
+    max-width: $container_width_desktop;
+    margin: 0 auto;
+    padding: 0 $container_padding_desktop;
+
+    @media (max-width: 1024px) {
+        max-width: $container_width_1024;
+        padding: 0 $container_padding_1024;
+    }
+
+    @media (max-width: 768px) {
+        max-width: $container_width_768;
+        padding: 0 $container_padding_768;
+    }
+
+    @media (max-width: 375px) {
+        max-width: $container_width_mobile;
+        padding: 0 $container_padding_mobile;
+    }
+}

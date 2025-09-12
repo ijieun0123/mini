@@ -4,7 +4,7 @@ const Header = () => {
             <div className="container">
                 <h1 className="logo">
                     <a href="#">
-                        <img src="" alt="" />
+                        <img src="/img/white_logo.png" alt="미니 로고" />
                     </a>
                 </h1>
                 <button className="menu">
