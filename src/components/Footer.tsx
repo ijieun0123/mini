@@ -8,17 +8,17 @@ const Footer = () => {
                     </a>
                     <ul className="sns">
                         <li>
-                            <a href="">
+                            <a href="" target="_blank" title="새창">
                                 <img src="" alt="" />
                             </a>
                         </li>
                         <li>
-                            <a href="">
+                            <a href="" target="_blank" title="새창">
                                 <img src="" alt="" />
                             </a>
                         </li>
                         <li>
-                            <a href="">
+                            <a href="" target="_blank" title="새창">
                                 <img src="" alt="" />
                             </a>
                         </li>

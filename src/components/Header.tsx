@@ -7,7 +7,13 @@ const Header = () => {
                         <img src="" alt="" />
                     </a>
                 </h1>
+                <button className="menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
                 <nav>
+                    <h2>메인 네비게이션</h2>
                     <ul>
                         <li>
                             <a href="#">브랜드</a>
@@ -23,9 +29,6 @@ const Header = () => {
                         </li>
                     </ul>
                 </nav>
-                <div className="menu">
-                    <img src="" alt="" />
-                </div>
             </div>
         </header>
     );
