@@ -5,14 +5,16 @@
     font-weight: $font_weight_semi_bold;
     line-height: $line_height_section_title;
     letter-spacing: $letter_spacing_section_title;
+    margin: $spacing_xxs 0 $spacing_sm;
 
     @media (max-width: 1024px) {
         font-size: $font_size_tablet_section_title;
     }
 
-    @media (max-width: 375px) {
+    @media (max-width: 767px) {
         font-size: $font_size_mobile_section_title;
         letter-spacing: $letter_spacing_mobile_section_title;
+        margin: $spacing_xxs 0 $spacing_xs;
     }
 }
 
@@ -23,7 +25,7 @@
     line-height: $line_height_paragraph;
     letter-spacing: $letter_spacing_paragraph;
 
-    @media (max-width: 375px) {
+    @media (max-width: 767px) {
         font-size: $font_size_mobile_paragraph;
         line-height: $line_height_mobile_paragraph;
     }
@@ -36,7 +38,7 @@
     line-height: $line_height_caption;
     letter-spacing: $letter_spacing_caption;
 
-    @media (max-width: 375px) {
+    @media (max-width: 767px) {
         font-size: $font_size_mobile_caption;
     }
 }
@@ -47,9 +49,11 @@
     font-weight: $font_weight_medium;
     line-height: $line_height_button;
     letter-spacing: $letter_spacing_button;
+    margin-top: $spacing_lg;
 
-    @media (max-width: 375px) {
+    @media (max-width: 767px) {
         font-size: $font_size_mobile_button;
+        margin-top: $spacing_md;
     }
 }
 
@@ -72,5 +76,19 @@
     @media (max-width: 375px) {
         max-width: $container_width_mobile;
         padding: 0 $container_padding_mobile;
+    }
+}
+
+// section
+section {
+    margin: $spacing_xxl 0;
+}
+
+// br
+.hide_on_mobile {
+    display: none;
+
+    @media (min-width: 768px) {
+        display: inline;
     }
 }

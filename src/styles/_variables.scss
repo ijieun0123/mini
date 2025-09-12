@@ -9,6 +9,13 @@ $blue: #006583;
 $light_gray: #f5f5f5;
 $white: #fff;
 
+:root {
+    --black-color: #{$black};
+    --blue-color: #{$blue};
+    --light-gray-color: #{$light_gray};
+    --white-color: #{$white};
+}
+
 // font family
 $font_family_korean: "NanumSquare", sans-serif;
 $font_family_english: "Montserrat", sans-serif;
@@ -28,6 +35,7 @@ $font_size_mobile_button: 1rem;
 $font_weight_semi_bold: 600;
 $font_weight_regular: 400;
 $font_weight_medium: 500;
+$font_weight_bold: 700;
 
 // line height
 $line_height_section_title: 1;
@@ -37,11 +45,11 @@ $line_height_button: 1.5;
 $line_height_mobile_paragraph: 1.375;
 
 // letter spacing
-$letter_spacing_section_title: -0.06em;
-$letter_spacing_paragraph: -0.02em;
-$letter_spacing_caption: -0.02em;
-$letter_spacing_button: -0.03em;
-$letter_spacing_mobile_section_title: -0.03em;
+$letter_spacing_section_title: -0.06rem;
+$letter_spacing_paragraph: -0.06rem;
+$letter_spacing_caption: -0.06rem;
+$letter_spacing_button: -0.03rem;
+$letter_spacing_mobile_section_title: -0.21rem;
 
 // spacing
 $spacing_xxs: 0.625rem; // 10px
