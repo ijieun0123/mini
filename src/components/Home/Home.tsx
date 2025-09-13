@@ -1,4 +1,5 @@
 import Button from "../Button/Button";
+import CarInfoBox from "../CarInfoBox/CarInfoBox";
 
 const Home = () => {
     return (
@@ -23,24 +24,12 @@ const Home = () => {
                     </div>
                     <div className="car_box">
                         <div className="bg_car"></div>
-                        <ul className="car_info_box">
-                            <li>
-                                <span>최대출력 (kw/PS)</span>
-                                <p>160(218) / 330</p>
-                            </li>
-                            <li>
-                                <span>주행거리</span>
-                                <p>300km</p>
-                            </li>
-                            <li>
-                                <span>0-100 km/h(초)</span>
-                                <p>6.7</p>
-                            </li>
-                            <li>
-                                <span>안전 최고 속도 (km/h)</span>
-                                <p>170</p>
-                            </li>
-                        </ul>
+                        <CarInfoBox
+                            maxPower="160(218) / 330"
+                            range="300km"
+                            acceleration="6.7"
+                            topSpeed="170"
+                        />
                     </div>
                 </div>
             </section>
@@ -105,33 +94,20 @@ const Home = () => {
                         <h2 className="title">MINI JCW</h2>
                         <p className="paragraph">
                             탁월한 코너링을 자랑하는 CONVERTIBLE의 순수한
-                            짜릿함을 경험해 보세요. 루프를 열고 바람을 느끼는
-                            오픈 에어링의 매력을 새로운 차원으로 끌어올렸습니다.
+                            짜릿함을 경험해 보세요.
+                            <br /> 루프를 열고 바람을 느끼는 오픈 에어링의
+                            매력을 새로운 차원으로 끌어올렸습니다.
                         </p>
-                        <a href="#" className="button">
-                            Explore JCW
-                        </a>
+                        <Button color="blue">Explore JCW</Button>
                     </div>
                     <div className="car_box">
                         <div className="bg_car"></div>
-                        <ul className="car_info_box">
-                            <li>
-                                <span>최대출력 (kw/PS)</span>
-                                <p>160(218) / 330</p>
-                            </li>
-                            <li>
-                                <span>주행거리</span>
-                                <p>300km</p>
-                            </li>
-                            <li>
-                                <span>0-100 km/h(초)</span>
-                                <p>6.7</p>
-                            </li>
-                            <li>
-                                <span>안전 최고 속도 (km/h)</span>
-                                <p>170</p>
-                            </li>
-                        </ul>
+                        <CarInfoBox
+                            maxPower="160(218) / 330"
+                            range="300km"
+                            acceleration="6.7"
+                            topSpeed="170"
+                        />
                     </div>
                 </div>
             </section>
@@ -139,16 +115,16 @@ const Home = () => {
                 <div className="container">
                     <div className="title_box">
                         <span className="caption">MINI가 선보이는 혁신</span>
-                        <h2 className="title">MINI DIGITAL EXPERIENCE</h2>
+                        <h2 className="title">
+                            MINI DIGITAL <br />
+                            EXPERIENCE
+                        </h2>
                     </div>
                     <div className="img_text_box">
-                        <div>
+                        <div className="left_contents">
                             <div className="bg_digital"></div>
-                            <b>
-                                MINI가 선보이는 혁신과 드라이빙의 융합을 경험해
-                                보세요.{" "}
-                            </b>
-                            <p>
+                            <b>MINI가 선보이는 혁신과 드라이빙의 융합</b>
+                            <p className="paragraph">
                                 주행 경험을 향상시키는 첨단 기술과 커넥티비티의
                                 세계로 초대합니다. 지능형
                                 인포테인먼트(infotainment)부터 몰입감을 선사하는
@@ -156,18 +132,16 @@ const Home = () => {
                                 모습을 확인해 보세요.{" "}
                             </p>
                         </div>
-                        <div>
+                        <div className="right_contents">
                             <div className="bg_digital"></div>
-                            <p>
+                            <p className="paragraph">
                                 MINI의 새로운 오퍼레이팅 시스템 9(Operating
                                 System 9)은 새롭고 직관적인 경험을 제공합니다.
                                 운전자는 언제 어디서든 MINI와 연결되어 간단하게
                                 모든 것을 컨트롤할 수 있죠.
                             </p>
+                            <Button color="blue">View More</Button>
                         </div>
-                        <a href="#" className="button">
-                            View More
-                        </a>
                     </div>
                 </div>
             </section>

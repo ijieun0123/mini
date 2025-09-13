@@ -31,15 +31,6 @@ main {
                     background: url("/img/icon_section_car.png") no-repeat
                         center/cover;
                 }
-                .car_info_box {
-                    display: none;
-                    li {
-                        span {
-                        }
-                        p {
-                        }
-                    }
-                }
             }
         }
         &::after {
@@ -55,6 +46,7 @@ main {
         }
     }
     .impact_section {
+        margin-bottom: 0;
         padding-bottom: $spacing_xl;
         background: #f5f5f5;
         transform: translateY(10px);
@@ -83,6 +75,193 @@ main {
             }
         }
     }
+    .services_section {
+        margin: 0;
+        padding: $spacing_xl 0;
+
+        .container {
+            .title {
+                margin: 0 0 38px;
+                text-align: center;
+            }
+            ul {
+                @include flex_column;
+                gap: 18px;
+
+                li {
+                    a {
+                        display: flex;
+                        align-items: center;
+                        gap: 28px;
+                        padding: 35px 23px;
+                        box-shadow: $box_shadow_medium;
+
+                        .bg_icon {
+                            width: 54px;
+                            height: 54px;
+                        }
+                        p {
+                            font-size: 18px;
+                        }
+                    }
+                }
+                li:nth-child(1) {
+                    a {
+                        background: $blue;
+
+                        .bg_icon {
+                            background: url(/img/services_section_icon_1.png)
+                                no-repeat center/cover;
+                        }
+                        p {
+                            color: #fff;
+                        }
+                    }
+                }
+                li:nth-child(2) {
+                    a {
+                        .bg_icon {
+                            background: url(/img/services_section_icon_2.png)
+                                no-repeat center/cover;
+                        }
+                        p {
+                        }
+                    }
+                }
+                li:nth-child(3) {
+                    a {
+                        .bg_icon {
+                            background: url(/img/services_section_icon_3.png)
+                                no-repeat center/cover;
+                        }
+                        p {
+                        }
+                    }
+                }
+                li:nth-child(4) {
+                    a {
+                        .bg_icon {
+                            background: url(/img/services_section_icon_4.png)
+                                no-repeat center/cover;
+                        }
+                        p {
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .jcw_section {
+        margin: 0;
+        padding: $spacing_xl 0;
+        background: $black url("/img/jcw_section_halo.png") no-repeat 0 380px /
+            600px 300px;
+
+        .container {
+            .text_box {
+                display: flex;
+                flex-direction: column;
+                color: #fff;
+
+                .title {
+                    margin-top: 0;
+                    text-align: right;
+                }
+                .paragraph {
+                    text-align: right;
+                }
+                .button {
+                    align-self: flex-end;
+                    margin-bottom: 57px;
+                }
+            }
+            .car_box {
+                .bg_car {
+                    width: 518px;
+                    height: 253px;
+                    margin-bottom: 54px;
+                    background: url("/img/jcw_section_car.png") no-repeat
+                        center/cover;
+                }
+                .car_info_box {
+                    li {
+                    }
+                }
+            }
+        }
+    }
+    .digital_section {
+        position: relative;
+        height: 1236px;
+        margin: 0;
+        padding: $spacing_xl 0;
+        background: #f5f5f5;
+
+        .container {
+            .title_box {
+                .caption {
+                }
+                .title {
+                    margin-bottom: 0;
+                }
+            }
+            .img_text_box {
+                .left_contents,
+                .right_contents {
+                    position: absolute;
+                    width: 328px;
+
+                    .bg_digital {
+                        width: 328px;
+                        height: 202px;
+                        box-shadow: $box_shadow_large;
+                    }
+                    b {
+                    }
+                    .paragraph {
+                    }
+                }
+                .left_contents {
+                    left: 0;
+                    top: 248px;
+
+                    .bg_digital {
+                        margin-left: -32px;
+                        background: url("/img/digital_section_photo_1.png")
+                            no-repeat center/cover;
+                    }
+                    b {
+                        display: block;
+                        margin: 40px 0 10px;
+                        color: $black;
+                        padding: 0 30px;
+                    }
+                    .paragraph {
+                        padding: 0 30px;
+                    }
+                }
+                .right_contents {
+                    right: 0;
+                    top: 704px;
+                    @include flex-column;
+
+                    .bg_digital {
+                        align-self: flex-end;
+                        background: url("/img/digital_section_photo_2.png")
+                            no-repeat center/cover;
+                    }
+                    .paragraph {
+                        align-self: flex-end;
+                        margin-top: 40px;
+                        padding: 0 30px 0 50px;
+                    }
+                    .button {
+                        margin-left: 50px;
+                    }
+                }
+            }
+        }
+    }
 }
 
 @media (min-width: 540px) {
@@ -100,19 +279,6 @@ main {
                         }
                     }
                     .button {
-                    }
-                }
-                .car_box {
-                    .bg_car {
-                        align-self: end;
-                    }
-                    .car_info_box {
-                        li {
-                            span {
-                            }
-                            p {
-                            }
-                        }
                     }
                 }
             }
@@ -147,26 +313,6 @@ main {
                         height: 322px;
                         align-self: center;
                     }
-                    .car_info_box {
-                        display: flex;
-                        gap: 50px;
-                        align-self: center;
-
-                        li {
-                            font-family: $font_family_korean;
-                            color: $black;
-
-                            span {
-                                font-size: 15px;
-                                letter-spacing: -0.08rem;
-                            }
-                            p {
-                                margin-top: 5px;
-                                font-size: 26px;
-                                font-weight: $font_weight_bold;
-                            }
-                        }
-                    }
                 }
             }
             &::after {
@@ -192,6 +338,133 @@ main {
                     .paragraph {
                     }
                     .button {
+                    }
+                }
+            }
+        }
+        .services_section {
+            padding: $spacing_xxxl 0;
+
+            .container {
+                .title {
+                    margin: 0 0 50px;
+                }
+                ul {
+                    flex-direction: row;
+                    flex-wrap: wrap;
+                    justify-content: space-between;
+                    gap: 20px;
+
+                    li {
+                        position: relative;
+                        width: calc((100% - 20px) / 2);
+                        height: 255px;
+
+                        a {
+                            width: 100%;
+                            height: 100%;
+
+                            .bg_icon {
+                                position: absolute;
+                                top: 35px;
+                                left: 35px;
+                                width: 75px;
+                                height: 75px;
+                            }
+                            p {
+                                position: absolute;
+                                left: 50%;
+                                bottom: 40px;
+                                transform: translateX(-50%);
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .jcw_section {
+            padding: $spacing_xxl 0;
+            background: $black url("/img/jcw_section_halo.png") no-repeat center /
+                818px 493px;
+
+            .container {
+                .text_box {
+                    .title {
+                    }
+                    .paragraph {
+                    }
+                    .button {
+                        margin-bottom: 68px;
+                    }
+                }
+                .car_box {
+                    .bg_car {
+                        width: 663px;
+                        height: 324px;
+                        margin-bottom: 54px;
+                        background: url("/img/jcw_section_car.png") no-repeat
+                            center/cover;
+                    }
+                    .car_info_box {
+                        li {
+                            color: $white;
+                        }
+                    }
+                }
+            }
+        }
+        .digital_section {
+            height: 1717px;
+            padding: $spacing_xxl 0;
+
+            .container {
+                .title_box {
+                    .caption {
+                    }
+                    .title {
+                    }
+                }
+                .img_text_box {
+                    .left_contents,
+                    .right_contents {
+                        width: 632px;
+
+                        .bg_digital {
+                            width: 632px;
+                            height: 404px;
+                        }
+                        b {
+                        }
+                        .paragraph {
+                        }
+                    }
+                    .left_contents {
+                        left: 0;
+                        top: 340px;
+
+                        .bg_digital {
+                            margin-left: 0;
+                        }
+                        b {
+                            font-size: 20px;
+                            margin: 40px 0 15px;
+                            padding: 0 50px;
+                        }
+                        .paragraph {
+                            padding: 0 50px;
+                        }
+                    }
+                    .right_contents {
+                        right: 0;
+                        top: 969px;
+                        .bg_digital {
+                        }
+                        .paragraph {
+                            padding: 0 60px 0 50px;
+                        }
+                        .button {
+                            margin-left: 50px;
+                        }
                     }
                 }
             }
@@ -223,18 +496,6 @@ main {
                         height: 413px;
                         margin-right: -230px;
                     }
-                    .car_info_box {
-                        gap: 100px;
-
-                        li {
-                            span {
-                            }
-                            p {
-                                margin-top: 10px;
-                                font-size: 30px;
-                            }
-                        }
-                    }
                 }
             }
             &::after {
@@ -260,6 +521,115 @@ main {
                     .paragraph {
                     }
                     .button {
+                    }
+                }
+            }
+        }
+        .services_section {
+            .container {
+                .title {
+                    margin: 0 0 80px;
+                }
+                ul {
+                    flex-wrap: no-wrap;
+                    gap: 20px;
+
+                    li {
+                        width: calc((100% - 60px) / 4);
+                        height: 334px;
+
+                        a {
+                            padding: 0;
+
+                            .bg_icon {
+                            }
+                            p {
+                                bottom: 50px;
+                                width: 100%;
+                                text-align: center;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .jcw_section {
+            padding: $spacing_xxxl 0;
+            background: $black url("/img/jcw_section_halo.png") no-repeat center
+                220px / 1424px 857px;
+
+            .container {
+                .text_box {
+                    .title {
+                    }
+                    .paragraph {
+                    }
+                    .button {
+                        margin-bottom: 36px;
+                    }
+                }
+                .car_box {
+                    .bg_car {
+                        width: 924px;
+                        height: 451px;
+                        margin-bottom: 50px;
+                    }
+                    .car_info_box {
+                        li {
+                        }
+                    }
+                }
+            }
+        }
+        .digital_section {
+            height: 1869px;
+            padding: $spacing_xxxl 0;
+
+            .container {
+                .title_box {
+                    .caption {
+                    }
+                    .title {
+                    }
+                }
+                .img_text_box {
+                    .left_contents,
+                    .right_contents {
+                        width: 800px;
+
+                        .bg_digital {
+                            width: 800px;
+                            height: 450px;
+                        }
+                        b {
+                        }
+                        .paragraph {
+                        }
+                    }
+                    .left_contents {
+                        left: 0;
+                        top: 370px;
+
+                        .bg_digital {
+                            margin-left: 0;
+                        }
+                        b {
+                            padding: 0 132px;
+                        }
+                        .paragraph {
+                            padding: 0 132px;
+                        }
+                    }
+                    .right_contents {
+                        right: 0;
+                        top: 1047px;
+
+                        .bg_digital {
+                        }
+                        .paragraph {
+                        }
+                        .button {
+                        }
                     }
                 }
             }
@@ -291,15 +661,6 @@ main {
                         width: 1049px;
                         height: 506px;
                         margin-right: 0;
-                    }
-                    .car_info_box {
-                        align-self: flex-end;
-                        li {
-                            span {
-                            }
-                            p {
-                            }
-                        }
                     }
                 }
             }
@@ -336,6 +697,120 @@ main {
                     .paragraph {
                     }
                     .button {
+                    }
+                }
+            }
+        }
+        .services_section {
+            .container {
+                .title {
+                }
+                ul {
+                    li {
+                        a {
+                            .bg_icon {
+                                width: 85px;
+                                height: 85px;
+                            }
+                            p {
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .jcw_section {
+            background: $black url("/img/jcw_section_halo.png") no-repeat center
+                210px / 1424px 857px;
+
+            .container {
+                .text_box {
+                    .title {
+                    }
+                    .paragraph {
+                    }
+                    .button {
+                        margin-bottom: -40px;
+                    }
+                }
+                .car_box {
+                    .bg_car {
+                        width: 1110px;
+                        height: 542px;
+                        margin-bottom: 75px;
+                    }
+                    .car_info_box {
+                        li {
+                        }
+                    }
+                }
+            }
+        }
+        .digital_section {
+            height: auto;
+
+            .container {
+                position: relative;
+
+                .title_box {
+                    position: absolute;
+                    right: 120px;
+                    top: 158px;
+
+                    .caption {
+                    }
+                    .title {
+                    }
+                }
+                .img_text_box {
+                    .left_contents,
+                    .right_contents {
+                        position: static;
+                        width: 800px;
+
+                        .bg_digital {
+                            width: 804px;
+                            height: 452px;
+                        }
+                        b {
+                        }
+                        .paragraph {
+                            width: 510px;
+                        }
+                    }
+                    .left_contents {
+                        left: auto;
+                        top: auto;
+
+                        .bg_digital {
+                            margin-left: 0;
+                        }
+                        b {
+                            margin: 70px 0 20px;
+                            padding: 0;
+                            font-size: 25px;
+                        }
+                        .paragraph {
+                            padding: 0;
+                        }
+                    }
+                    .right_contents {
+                        right: auto;
+                        top: auto;
+                        width: 510px;
+
+                        .bg_digital {
+                            position: absolute;
+                            right: 0;
+                            top: 422px;
+                        }
+                        .paragraph {
+                            margin-top: 10px;
+                            padding: 0;
+                        }
+                        .button {
+                            margin-left: 0;
+                        }
                     }
                 }
             }
