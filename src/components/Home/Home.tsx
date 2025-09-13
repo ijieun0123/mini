@@ -45,13 +45,18 @@ const Home = () => {
                 </div>
             </section>
             <section className="impact_section">
-                <div className="bg_photo"></div>
                 <div className="container">
+                    <div className="bg_photo"></div>
                     <div className="text_box">
                         <span className="caption">
                             "내가 MINI다"라는 자신감
                         </span>
-                        <h2 className="title">OWN YOUR IMPACT</h2>
+                        <h2 className="title">
+                            OWN
+                            <br className="show_on_mobile" />
+                            <span className="hide_on_mobile"> </span>
+                            YOUR IMPACT
+                        </h2>
                         <p className="paragraph">
                             MINI는 단순한 이동 수단을 넘어, 당신의
                             라이프스타일과 가치를 대변합니다. 작은 차체에 담긴
@@ -59,9 +64,7 @@ const Home = () => {
                             향한 실천이 만날 때, 당신은 어디에서든 자신만의
                             발자취를 남깁니다.
                         </p>
-                        <a href="#" className="button">
-                            View More
-                        </a>
+                        <Button color="blue">View More</Button>
                     </div>
                 </div>
             </section>

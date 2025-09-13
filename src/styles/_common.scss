@@ -28,6 +28,7 @@
     @media (max-width: 767px) {
         font-size: $font_size_mobile_paragraph;
         line-height: $line_height_mobile_paragraph;
+        letter-spacing: $letter_spacing_mobile_paragraph;
     }
 }
 
@@ -90,5 +91,12 @@ section {
 
     @media (min-width: 768px) {
         display: inline;
+    }
+}
+.show_on_mobile {
+    display: inline;
+
+    @media (min-width: 768px) {
+        display: none;
     }
 }
