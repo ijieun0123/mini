@@ -1,0 +1,186 @@
+footer {
+    background: $black;
+
+    .container {
+        padding: 50px 0;
+
+        .logo_sns_box {
+            a {
+                img {
+                    width: 80px;
+                }
+            }
+            .sns {
+                display: flex;
+                gap: 25px;
+                margin: 40px 0 25px;
+
+                li {
+                    a {
+                        img {
+                            width: 30px;
+                        }
+                    }
+                }
+            }
+        }
+        address {
+            font-style: normal;
+            font-family: $font_family_korean;
+            color: $white;
+
+            ul {
+                display: flex;
+                flex-direction: column;
+                gap: 10px;
+
+                li {
+                    display: flex;
+
+                    p {
+                    }
+                    p:nth-child(1) {
+                        margin-right: 15px;
+                        font-weight: $font_weight_medium;
+                        font-size: 15px;
+                    }
+                    p:nth-child(2) {
+                        font-size: 15px;
+                        font-weight: $font_wegiht_light;
+                    }
+                }
+                li:last-child {
+                    p:nth-child(2) {
+                        width: 80%;
+                    }
+                }
+            }
+        }
+        .copyright {
+            margin-top: 50px;
+            color: $white;
+            font-size: 15px;
+            font-weight: 300;
+            font-family: $font_family_english;
+        }
+    }
+}
+
+@media (min-width: 768px) {
+    footer {
+        .container {
+            .logo_sns_box {
+                @include flex_between;
+                margin-bottom: 50px;
+
+                a {
+                    img {
+                        width: 125px;
+                    }
+                }
+                .sns {
+                    gap: 30px;
+                    margin: 0;
+
+                    li {
+                        a {
+                            img {
+                                width: 35px;
+                            }
+                        }
+                    }
+                }
+            }
+            address {
+                ul {
+                    li {
+                        p:nth-child(1) {
+                            font-size: 16px;
+                        }
+                        p:nth-child(2) {
+                            font-size: 16px;
+                        }
+                    }
+                    li:last-child {
+                        p:nth-child(2) {
+                            width: auto;
+                        }
+                    }
+                }
+            }
+            .copyright {
+                text-align: center;
+            }
+        }
+    }
+}
+
+@media (min-width: 1024px) {
+    footer {
+        .container {
+            padding: 80px 0;
+
+            .logo_sns_box {
+                a {
+                    img {
+                    }
+                }
+                .sns {
+                    gap: 40px;
+
+                    li {
+                        a {
+                            img {
+                            }
+                        }
+                    }
+                }
+            }
+            address {
+                ul {
+                    li {
+                        p:nth-child(1) {
+                        }
+                        p:nth-child(2) {
+                        }
+                    }
+                }
+            }
+            .copyright {
+            }
+        }
+    }
+}
+
+@media (min-width: 1440px) {
+    footer {
+        .container {
+            .logo_sns_box {
+                a {
+                    img {
+                    }
+                }
+                .sns {
+                    li {
+                        a {
+                            img {
+                            }
+                        }
+                    }
+                }
+            }
+            address {
+                ul {
+                    li {
+                        p:nth-child(1) {
+                        }
+                        p:nth-child(2) {
+                        }
+                    }
+                }
+            }
+            .copyright {
+            }
+        }
+    }
+}

@@ -1,0 +1,259 @@
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 15px 0;
+    background: $blue;
+    box-shadow: $box_shadow_medium;
+    z-index: 10;
+
+    .container {
+        @include flex_between;
+
+        .logo {
+            a {
+                img {
+                    width: 80px;
+                }
+            }
+        }
+        .menu {
+            position: relative;
+            width: 25px;
+            height: 20px;
+
+            span {
+                position: absolute;
+                left: 0;
+                display: inline-block;
+                width: 100%;
+                height: 2px;
+                background: $white;
+                transition: 0.3s;
+            }
+            span:nth-child(2) {
+                top: 0;
+            }
+            span:nth-child(3) {
+                top: 50%;
+                transform: translateY(-50%);
+            }
+            span:nth-child(4) {
+                bottom: 0;
+            }
+            &.active {
+                span:nth-child(2) {
+                    transform: translateY(8px) rotate(45deg);
+                }
+                span:nth-child(3) {
+                    opacity: 0;
+                    transform: translateX(-10px);
+                }
+                span:nth-child(4) {
+                    transform: translateY(-10px) rotate(-45deg);
+                }
+            }
+        }
+        nav {
+            position: absolute;
+            top: 64px;
+            left: 100%;
+            display: block;
+            width: 100%;
+            height: 100vh;
+            background: $blue;
+            transition: 0.2s;
+
+            ul {
+                color: $white;
+
+                li {
+                    border-bottom: 1px solid $white;
+                    cursor: pointer;
+
+                    a {
+                        display: block;
+                        width: 82.222%;
+                        height: 100%;
+                        margin: 0 auto;
+                        padding: 25px 0;
+                        font-size: 18px;
+                    }
+
+                    &:hover {
+                        background: $black;
+                    }
+                }
+            }
+            &.active {
+                left: 0;
+            }
+        }
+    }
+}
+
+@media (min-width: 768px) {
+    header {
+        padding: 20px 0;
+
+        .container {
+            .logo {
+                a {
+                    img {
+                        width: 100px;
+                    }
+                }
+            }
+            .menu {
+                span {
+                }
+                span:nth-child(2) {
+                }
+                span:nth-child(3) {
+                }
+                span:nth-child(4) {
+                }
+                &.active {
+                    span:nth-child(2) {
+                    }
+                    span:nth-child(3) {
+                    }
+                    span:nth-child(4) {
+                    }
+                }
+            }
+            nav {
+                top: 83px;
+
+                ul {
+                    li {
+                        a {
+                            width: 86.979%;
+
+                            &:hover {
+                            }
+                        }
+                    }
+                }
+                &.active {
+                }
+            }
+        }
+    }
+}
+
+@media (min-width: 1024px) {
+    header {
+        .container {
+            .logo {
+                a {
+                    img {
+                        width: 125px;
+                    }
+                }
+            }
+            .menu {
+                width: 35px;
+                height: 25px;
+
+                span {
+                }
+                span:nth-child(2) {
+                }
+                span:nth-child(3) {
+                }
+                span:nth-child(4) {
+                }
+                &.active {
+                    span:nth-child(2) {
+                        transform: translateY(12px) rotate(45deg);
+                    }
+                    span:nth-child(3) {
+                    }
+                    span:nth-child(4) {
+                        transform: translateY(-11px) rotate(-45deg);
+                    }
+                }
+            }
+            nav {
+                top: 94px;
+
+                ul {
+                    li {
+                        a {
+                            width: 90.625%;
+
+                            &:hover {
+                            }
+                        }
+                    }
+                }
+                &.active {
+                }
+            }
+        }
+    }
+}
+
+@media (min-width: 1440px) {
+    header {
+        .container {
+            @include flex_between;
+
+            .logo {
+                a {
+                    img {
+                        width: 125px;
+                    }
+                }
+            }
+            .menu {
+                display: none;
+
+                span {
+                }
+                span:nth-child(2) {
+                }
+                span:nth-child(3) {
+                }
+                span:nth-child(4) {
+                }
+                &.active {
+                    span:nth-child(2) {
+                        transform: translateY(12px) rotate(45deg);
+                    }
+                    span:nth-child(3) {
+                    }
+                    span:nth-child(4) {
+                    }
+                }
+            }
+            nav {
+                position: static;
+                width: auto;
+                height: auto;
+                background: none;
+
+                ul {
+                    display: flex;
+                    gap: 60px;
+
+                    li {
+                        border: none;
+
+                        a {
+                            width: 100%;
+                            padding: 0;
+
+                            &:hover {
+                            }
+                        }
+                    }
+                }
+                &.active {
+                }
+            }
+        }
+    }
+}

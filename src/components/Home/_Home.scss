@@ -1,0 +1,922 @@
+main {
+    .intro_section {
+        position: relative;
+        width: 100%;
+        min-height: 650px;
+        padding-top: 120px;
+        padding-bottom: 100px;
+        margin-top: 0;
+        margin-bottom: 20px;
+        background: $white;
+
+        .container {
+            position: relative;
+            z-index: 2;
+
+            .text_box {
+                .caption {
+                    color: $white;
+                }
+                .title {
+                    color: $white;
+                }
+                .paragraph {
+                    color: $white;
+                }
+                .button {
+                    margin-bottom: 20px;
+                }
+            }
+            .car_box {
+                @include flex_column;
+
+                .bg_car {
+                    width: 170%;
+                    padding-bottom: 82%;
+                    background: url("/img/icon_section_car.png") no-repeat
+                        center/cover;
+                }
+            }
+        }
+        &::after {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: $blue;
+            z-index: 0;
+            clip-path: polygon(0 0, 100% 0%, 100% 60%, 0% 100%);
+        }
+    }
+    .impact_section {
+        margin: 0;
+        padding-bottom: 100px;
+        background: #f5f5f5;
+        transform: translateY(10px);
+        .bg_photo {
+            width: 91.111%;
+            padding-bottom: 61%;
+            background: url(/img/impact_section_photo.png) no-repeat
+                center/cover;
+            margin-bottom: 40px;
+            transform: translateY(-10px);
+        }
+        .text_box {
+            width: 82.222%;
+            margin: 0 auto;
+
+            .caption {
+            }
+            .title {
+            }
+            .paragraph {
+            }
+            .button {
+            }
+        }
+    }
+    .services_section {
+        margin: 0;
+        padding: 110px 0 100px;
+
+        .container {
+            .title {
+                margin: 0 0 38px;
+                text-align: center;
+            }
+            ul {
+                @include flex_column;
+                gap: 18px;
+
+                li {
+                    a {
+                        display: flex;
+                        align-items: center;
+                        gap: 28px;
+                        padding: 35px 8.108%;
+                        box-shadow: $box_shadow_medium;
+
+                        .bg_icon {
+                            width: 54px;
+                            height: 54px;
+                        }
+                        p {
+                            color: $black;
+                            font-size: 18px;
+                        }
+                    }
+                }
+                li:nth-child(1) {
+                    a {
+                        background: $blue;
+
+                        .bg_icon {
+                            background: url(/img/services_section_icon_1.png)
+                                no-repeat center/cover;
+                        }
+                        p {
+                            color: #fff;
+                        }
+                    }
+                }
+                li:nth-child(2) {
+                    a {
+                        .bg_icon {
+                            background: url(/img/services_section_icon_2.png)
+                                no-repeat center/cover;
+                        }
+                        p {
+                        }
+                    }
+                }
+                li:nth-child(3) {
+                    a {
+                        .bg_icon {
+                            background: url(/img/services_section_icon_3.png)
+                                no-repeat center/cover;
+                        }
+                        p {
+                        }
+                    }
+                }
+                li:nth-child(4) {
+                    a {
+                        .bg_icon {
+                            background: url(/img/services_section_icon_4.png)
+                                no-repeat center/cover;
+                        }
+                        p {
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .jcw_section {
+        margin: 0;
+        padding: 100px 0;
+        background: $black url("/img/jcw_section_halo.png") no-repeat 0 380px /
+            600px 300px;
+
+        .container {
+            .text_box {
+                display: flex;
+                flex-direction: column;
+
+                .title {
+                    margin-top: 0;
+                    text-align: right;
+                    color: $white;
+                }
+                .paragraph {
+                    text-align: right;
+                    color: $white;
+                }
+                .button {
+                    align-self: flex-end;
+                    margin-bottom: 57px;
+                    color: $white;
+                }
+            }
+            .car_box {
+                .bg_car {
+                    width: 518px;
+                    height: 253px;
+                    background: url("/img/jcw_section_car.png") no-repeat
+                        center/cover;
+                }
+                .car_info_box {
+                    li {
+                    }
+                }
+            }
+        }
+    }
+    .digital_section {
+        margin: 0;
+        padding: 100px 0;
+        background: $light_gray;
+
+        .container {
+            width: auto;
+
+            .title_box {
+                width: 82.222%;
+                margin: 0 auto;
+
+                .caption {
+                }
+                .title {
+                    margin-bottom: 0;
+                }
+            }
+            .img_text_box {
+                .left_contents,
+                .right_contents {
+                    width: 91.111%;
+
+                    .bg_digital {
+                        padding-bottom: 64.585%;
+                        box-shadow: $box_shadow_large;
+                    }
+                }
+                .left_contents {
+                    margin: 40px 0 50px;
+
+                    .bg_digital {
+                        background: url("/img/digital_section_photo_1.png")
+                            no-repeat center/cover;
+                    }
+                    div {
+                        padding-left: 9.888%;
+
+                        b {
+                            display: block;
+                            margin: 40px 0 10px;
+                            color: $black;
+                        }
+                        .paragraph {
+                        }
+                    }
+                }
+                .right_contents {
+                    margin-left: auto;
+
+                    .bg_digital {
+                        background: url("/img/digital_section_photo_2.png")
+                            no-repeat center/cover;
+                    }
+                    .paragraph {
+                        margin-top: 40px;
+                        padding-right: 8.888%;
+                    }
+                    .button {
+                    }
+                }
+            }
+        }
+    }
+    .edition_section {
+        margin-top: 100px;
+
+        .container {
+            width: auto;
+
+            .title {
+                margin-top: 0;
+                text-align: center;
+                color: $black;
+            }
+            .eidition_swiper {
+            }
+        }
+    }
+    .news_section {
+        position: relative;
+        margin-bottom: 0;
+        padding-bottom: 120px;
+
+        .title {
+            position: relative;
+            margin: 0;
+            margin-bottom: 40px;
+            text-align: center;
+            color: $black;
+            z-index: 2;
+        }
+        .bg_car {
+            display: none;
+            z-index: 1;
+        }
+        &::after {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: $blue;
+            z-index: 0;
+            clip-path: polygon(0 31%, 100% 46%, 100% 101%, 0% 100%);
+        }
+    }
+}
+
+@media (min-width: 768px) {
+    main {
+        .intro_section {
+            padding-top: 150px;
+            margin-bottom: 50px;
+
+            .container {
+                .text_box {
+                    .caption {
+                    }
+                    .title {
+                    }
+                    .paragraph {
+                        .hide_on_mobile {
+                        }
+                    }
+                    .button {
+                        margin-bottom: 0;
+                    }
+                }
+                .car_box {
+                    gap: 15px;
+
+                    .bg_car {
+                        width: 100%;
+                        padding-bottom: 48%;
+                        align-self: center;
+                    }
+                }
+            }
+            &::after {
+                clip-path: polygon(0 0, 100% 0%, 100% 44%, 0% 83%);
+            }
+        }
+        .impact_section {
+            transform: translateY(48px);
+            padding-bottom: 120px;
+
+            .bg_photo {
+                width: 79.6875%;
+                // padding-bottom: 66.013%;
+                padding-bottom: 404px;
+                margin-bottom: 2px;
+                transform: translateY(-48px);
+            }
+            .text_box {
+                width: 74.218%;
+                margin: 0;
+                margin-left: 6.38%;
+
+                .caption {
+                }
+                .title {
+                }
+                .paragraph {
+                }
+                .button {
+                }
+            }
+        }
+        .services_section {
+            padding: 198px 0 150px;
+
+            .container {
+                .title {
+                    margin: 0 0 50px;
+                }
+                ul {
+                    flex-direction: row;
+                    flex-wrap: wrap;
+                    justify-content: space-between;
+                    gap: 20px;
+
+                    li {
+                        position: relative;
+                        width: calc((100% - 20px) / 2);
+                        height: 255px;
+
+                        a {
+                            width: 100%;
+                            height: 100%;
+
+                            .bg_icon {
+                                position: absolute;
+                                top: 35px;
+                                left: 35px;
+                                width: 75px;
+                                height: 75px;
+                            }
+                            p {
+                                position: absolute;
+                                left: 50%;
+                                bottom: 40px;
+                                transform: translateX(-50%);
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .jcw_section {
+            padding: 120px 0;
+            background: $black url("/img/jcw_section_halo.png") no-repeat center /
+                818px 493px;
+
+            .container {
+                .text_box {
+                    .title {
+                    }
+                    .paragraph {
+                    }
+                    .button {
+                        margin-bottom: 68px;
+                    }
+                }
+                .car_box {
+                    .bg_car {
+                        width: 663px;
+                        height: 324px;
+                        margin-bottom: 54px;
+                        background: url("/img/jcw_section_car.png") no-repeat
+                            center/cover;
+                    }
+                    .car_info_box {
+                        li {
+                            color: $white;
+                        }
+                    }
+                }
+            }
+        }
+        .digital_section {
+            padding: 120px 0;
+
+            .container {
+                .title_box {
+                    width: 86.979%;
+
+                    .caption {
+                    }
+                    .title {
+                    }
+                }
+                .img_text_box {
+                    .left_contents,
+                    .right_contents {
+                        width: 82.2916%;
+
+                        .bg_digital {
+                            padding-bottom: 64.924%;
+                        }
+                    }
+                    .left_contents {
+                        margin: 70px 0;
+
+                        .bg_digital {
+                        }
+                        div {
+                            padding-left: 7.51%;
+                            b {
+                                width: 88.696%;
+                                margin: 40px 0 15px;
+                                font-size: 20px;
+                            }
+                            .paragraph {
+                                width: 88.696%;
+                            }
+                        }
+                    }
+                    .right_contents {
+                        .bg_digital {
+                        }
+                        .paragraph {
+                            width: 88.696%;
+                            margin-left: 7.51%;
+                            padding-right: 0;
+                        }
+                        .button {
+                            margin-left: 7.51%;
+                        }
+                    }
+                }
+            }
+        }
+        .edition_section {
+            margin-top: 120px;
+
+            .container {
+                width: auto;
+
+                .title {
+                }
+                .eidition_swiper {
+                }
+            }
+        }
+        .news_section {
+            padding-bottom: 140px;
+
+            .title {
+                margin-bottom: 50px;
+            }
+            .bg_car {
+            }
+            &::after {
+                clip-path: polygon(0 32%, 100% 59%, 100% 101%, 0% 100%);
+            }
+        }
+    }
+}
+
+@media (min-width: 1024px) {
+    main {
+        .intro_section {
+            padding-top: 186px;
+            margin-bottom: 100px;
+
+            .container {
+                .text_box {
+                    .caption {
+                    }
+                    .title {
+                    }
+                    .paragraph {
+                        .hide_on_mobile {
+                        }
+                    }
+                    .button {
+                    }
+                }
+                .car_box {
+                    gap: 35px;
+                    margin-top: -100px;
+
+                    .bg_car {
+                        width: 856px;
+                        height: 413px;
+                        padding-bottom: 0;
+                        margin-right: -2%;
+                        align-self: center;
+                    }
+                }
+            }
+            &::after {
+                clip-path: polygon(0 0, 100% 0%, 100% 23%, 0% 83%);
+            }
+        }
+        .impact_section {
+            transform: translateY(70px);
+            padding-bottom: 150px;
+
+            .bg_photo {
+                width: 79.882%;
+                padding-bottom: 531px;
+                margin-bottom: -20px;
+                transform: translateY(-70px);
+            }
+            .text_box {
+                width: 55.664%;
+                margin-left: 4.6875%;
+
+                .caption {
+                }
+                .title {
+                }
+                .paragraph {
+                }
+                .button {
+                }
+            }
+        }
+        .services_section {
+            padding: 220px 0 150px;
+
+            .container {
+                .title {
+                    margin: 0 0 80px;
+                }
+                ul {
+                    flex-wrap: no-wrap;
+                    gap: 20px;
+
+                    li {
+                        width: calc((100% - 60px) / 4);
+                        height: 334px;
+
+                        a {
+                            padding: 0;
+
+                            .bg_icon {
+                            }
+                            p {
+                                bottom: 50px;
+                                width: 100%;
+                                text-align: center;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .jcw_section {
+            padding: 150px 0;
+            background: $black url("/img/jcw_section_halo.png") no-repeat center
+                220px / 1424px 857px;
+
+            .container {
+                .text_box {
+                    .title {
+                    }
+                    .paragraph {
+                    }
+                    .button {
+                        margin-bottom: 36px;
+                    }
+                }
+                .car_box {
+                    .bg_car {
+                        width: 924px;
+                        height: 451px;
+                        margin-bottom: 50px;
+                    }
+                    .car_info_box {
+                        li {
+                        }
+                    }
+                }
+            }
+        }
+        .digital_section {
+            padding: 150px 0;
+
+            .container {
+                .title_box {
+                    width: 90.625%;
+
+                    .caption {
+                    }
+                    .title {
+                    }
+                }
+                .img_text_box {
+                    .left_contents,
+                    .right_contents {
+                        width: 78.125%;
+
+                        .bg_digital {
+                            // padding-bottom: 56.25%;
+                            padding-bottom: 0;
+                            width: 800px;
+                            height: 450px;
+                        }
+                    }
+                    .left_contents {
+                        .bg_digital {
+                        }
+                        div {
+                            // padding-left: 12.402%;
+                            padding-left: 127px;
+
+                            b {
+                            }
+                            .paragraph {
+                                // width: 78.696%;
+                                width: 510px;
+                            }
+                        }
+                    }
+                    .right_contents {
+                        width: 800px;
+
+                        .bg_digital {
+                        }
+                        .paragraph {
+                            // width: 74.696%;
+                            width: 510px;
+                            // margin-left: 6.296%;
+                            margin-left: 50px;
+                            padding-right: 0%;
+                        }
+                        .button {
+                            // margin-left: 6.296%;
+                            margin-left: 50px;
+                        }
+                    }
+                }
+            }
+        }
+        .edition_section {
+            margin-top: 150px;
+
+            container {
+                width: auto;
+            }
+        }
+        .news_section {
+            position: relative;
+
+            .title {
+                margin-bottom: 176px;
+            }
+            .bg_car {
+                position: absolute;
+                top: -300px;
+                left: auto;
+                right: 50%;
+                margin-right: 90px;
+                display: block;
+                width: 1612px;
+                height: 722px;
+                background: url("/img/news_section_car.png") no-repeat
+                    center/cover;
+            }
+            &::after {
+                clip-path: polygon(0 32%, 100% 77%, 100% 110%, 0% 100%);
+            }
+        }
+    }
+}
+
+@media (min-width: 1440px) {
+    main {
+        .intro_section {
+            padding-top: 186px;
+
+            .container {
+                .text_box {
+                    .caption {
+                    }
+                    .title {
+                    }
+                    .paragraph {
+                        .hide_on_mobile {
+                        }
+                    }
+                    .button {
+                    }
+                }
+                .car_box {
+                    gap: 15px;
+                    width: auto;
+                    margin-top: -230px;
+
+                    .bg_car {
+                        align-self: flex-end;
+                        width: 1049px;
+                        height: 506px;
+                        padding-bottom: 0;
+                        margin-right: 0;
+                    }
+                }
+            }
+            &::after {
+                clip-path: polygon(0 0, 100% 0%, 100% 13%, 0% 95%);
+            }
+        }
+        .impact_section {
+            display: flex;
+            gap: 100px;
+            width: 100%;
+            height: 544px;
+            transform: translateY(0);
+            padding-bottom: 0;
+
+            .bg_photo {
+                width: 49.479%;
+                max-width: 950px;
+                height: 544px;
+                padding-bottom: 0;
+                margin-left: 0;
+                margin-bottom: 0;
+                transform: translateY(0);
+            }
+            .text_box {
+                width: 570px;
+                margin-top: 100px;
+                margin-left: 0;
+
+                .caption {
+                }
+                .title {
+                }
+                .paragraph {
+                }
+                .button {
+                }
+            }
+        }
+        .services_section {
+            .container {
+                .title {
+                }
+                ul {
+                    li {
+                        a {
+                            .bg_icon {
+                                width: 85px;
+                                height: 85px;
+                            }
+                            p {
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .jcw_section {
+            background: $black url("/img/jcw_section_halo.png") no-repeat center
+                210px / 1424px 857px;
+
+            .container {
+                .text_box {
+                    .title {
+                    }
+                    .paragraph {
+                    }
+                    .button {
+                        margin-bottom: -40px;
+                    }
+                }
+                .car_box {
+                    .bg_car {
+                        width: 1110px;
+                        height: 542px;
+                        margin-bottom: 75px;
+                    }
+                    .car_info_box {
+                        li {
+                        }
+                    }
+                }
+            }
+        }
+        .digital_section {
+            padding: 150px 0 305px;
+
+            .container {
+                position: relative;
+                width: 1396px;
+
+                .title_box {
+                    position: absolute;
+                    top: 160px;
+                    left: 900px;
+                    width: auto;
+
+                    .caption {
+                    }
+                    .title {
+                    }
+                }
+                .img_text_box {
+                    .left_contents,
+                    .right_contents {
+                        width: auto;
+
+                        .bg_digital {
+                            width: 804px;
+                            padding-bottom: 0;
+                        }
+                    }
+                    .left_contents {
+                        margin: 0;
+
+                        .bg_digital {
+                            height: 452px;
+                        }
+                        div {
+                            width: 36.532%;
+                            padding-left: 0;
+                            b {
+                                margin: 70px 0 20px;
+                                font-size: 25px;
+                            }
+                            .paragraph {
+                                width: 99.696%;
+                            }
+                        }
+                    }
+                    .right_contents {
+                        .bg_digital {
+                            position: absolute;
+                            right: 0;
+                            bottom: -160px;
+                            height: 569px;
+                        }
+                        .paragraph {
+                            width: 36.532%;
+                            margin-top: 10px;
+                            margin-left: 0;
+                        }
+                        .button {
+                            margin-left: 0;
+                        }
+                    }
+                }
+            }
+        }
+        .edition_section {
+            .container {
+                width: auto;
+            }
+        }
+        .news_section {
+            .title {
+                margin-bottom: 100px;
+            }
+            .bg_car {
+                top: -130px;
+                left: -1120px;
+                width: 1852px;
+                height: 830px;
+            }
+        }
+    }
+}

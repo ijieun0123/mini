@@ -1,0 +1,81 @@
+// 나눔스퀘어
+@import url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_two@1.0/NanumSquare.woff");
+// Montserrat
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+
+// color palette
+$black: #003b4c;
+$blue: #006583;
+$light_gray: #f5f5f5;
+$white: rgba(255, 255, 255, 0.9);
+
+:root {
+    --black-color: #{$black};
+    --blue-color: #{$blue};
+    --light-gray-color: #{$light_gray};
+    --white-color: #{$white};
+}
+
+// font family
+$font_family_korean: "NanumSquare", sans-serif;
+$font_family_english: "Montserrat", sans-serif;
+
+// font size
+$font_size_section_title: 3.75rem; // 60px
+$font_size_paragraph: 1.125rem; // 18px
+$font_size_caption: 1.125rem;
+$font_size_button: 1.125rem;
+$font_size_mobile_section_title: 2.5rem; // 40px
+$font_size_mobile_paragraph: 1rem; // 16px
+$font_size_mobile_caption: 1rem;
+$font_size_mobile_button: 1rem;
+
+// font weight
+$font_weight_semi_bold: 600;
+$font_wegiht_light: 300;
+$font_weight_regular: 400;
+$font_weight_medium: 500;
+$font_weight_bold: 700;
+
+// line height
+$line_height_section_title: 0.96;
+$line_height_desktop_section_title: 1;
+$line_height_paragraph: 1.333;
+$line_height_caption: 1.5;
+$line_height_button: 1.5;
+$line_height_mobile_paragraph: 1.375;
+
+// letter spacing
+$letter_spacing_section_title: -0.21rem;
+$letter_spacing_paragraph: -0.09rem;
+$letter_spacing_caption: -0.04rem;
+$letter_spacing_button: -0.03rem;
+$letter_spacing_tablet_title: -0.25rem;
+$letter_spacing_tablet_paragraph: -0.03rem;
+$letter_spacing_mobile_section_title: -0.12rem;
+$letter_spacing_mobile_paragraph: -0.04rem;
+
+// spacing
+$spacing_xxs: 0.625rem; // 10px
+$spacing_xs: 0.9375rem; // 15px
+$spacing_sm: 1.25rem; // 20px
+$spacing_md: 2.5rem; // 40px
+$spacing_lg: 3.75rem; // 60px
+$spacing_xl: 6.25rem; // 100px
+$spacing_xxl: 7.5rem; // 120px
+$spacing_xxxl: 9.375rem; // 150px
+$spacing_xxxxl: 12.5rem; // 200px
+
+// layout
+$container_width_desktop: 1396px;
+$container_width_1024: 928px;
+$container_width_768: 668px;
+$container_width_mobile: 296px;
+$container_padding_desktop: 1.25rem;
+$container_padding_1024: 1.25rem;
+$container_padding_768: 1.25rem;
+$container_padding_mobile: 1rem;
+
+// shadow
+$box_shadow_medium: 0 4px 12px 0 rgba(0, 59, 76, 0.2); // card
+$box_shadow_large: 0 12px 24px -2px rgba(0, 59, 76, 0.2); // image

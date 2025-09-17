@@ -1,0 +1,65 @@
+.news_section .swiper {
+    overflow: visible !important;
+}
+.news_section .swiper-wrapper {
+    height: 450px !important;
+}
+.news_section .swiper-pagination-fraction,
+.news_section .swiper-pagination-custom,
+.news_section .swiper-horizontal > .swiper-pagination-bullets,
+.news_section .swiper-pagination-bullets.swiper-pagination-horizontal {
+    top: auto !important;
+    bottom: -10px !important;
+}
+.news_section .swiper-pagination-bullet {
+    width: 10px !important;
+    height: 10px !important;
+    margin: 0 10px !important;
+    background: rgba(255, 255, 255, 0.8) !important;
+}
+.news_section .swiper-pagination-bullet-active {
+    background: #fff !important;
+}
+
+@media (min-width: 768px) {
+    .news_section .swiper {
+        padding-left: 50px !important;
+    }
+    .news_section .swiper-wrapper {
+        height: 580px !important;
+    }
+    .news_section .swiper-backface-hidden .swiper-slide {
+        width: auto !important;
+    }
+    .news_section .swiper-pagination-fraction,
+    .news_section .swiper-pagination-custom,
+    .news_section .swiper-horizontal > .swiper-pagination-bullets,
+    .news_section .swiper-pagination-bullets.swiper-pagination-horizontal {
+        bottom: -20px !important;
+    }
+}
+
+@media (min-width: 1024px) {
+    .news_section .swiper {
+        margin-left: 27.832% !important;
+        overflow-x: hidden !important;
+    }
+    .news_section .swiper-pagination-fraction,
+    .news_section .swiper-pagination-custom,
+    .news_section .swiper-horizontal > .swiper-pagination-bullets,
+    .news_section .swiper-pagination-bullets.swiper-pagination-horizontal {
+        bottom: 0 !important;
+    }
+}
+
+@media (min-width: 1440px) {
+    .news_section .swiper {
+        margin-left: 852px !important;
+    }
+    .news_section .swiper-pagination-fraction,
+    .news_section .swiper-pagination-custom,
+    .news_section .swiper-horizontal > .swiper-pagination-bullets,
+    .news_section .swiper-pagination-bullets.swiper-pagination-horizontal {
+        display: none !important;
+    }
+}

@@ -1,0 +1,11 @@
+@import "../../styles/variables";
+
+.edition_section .swiper-pagination-bullet {
+    width: 10px !important;
+    height: 10px !important;
+    margin: 0 10px !important;
+}
+
+.edition_section .swiper-pagination-bullet-active {
+    background: $blue !important;
+}
