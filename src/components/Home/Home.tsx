@@ -50,8 +50,8 @@ const Home = () => {
                     <div
                         className="car_box"
                         data-aos="fade-down-left"
-                        data-aos-duration="2000"
-                        data-aos-delay="1200"
+                        data-aos-duration="1000"
+                        data-aos-delay="900"
                     >
                         <div className="img_box">
                             <img
@@ -75,14 +75,14 @@ const Home = () => {
                 <div
                     className="bg_photo"
                     data-aos="fade"
-                    data-aos-duration="2000"
-                    data-aos-delay="1200"
+                    data-aos-duration="3000"
+                    data-aos-delay="900"
                 ></div>
                 <div className="text_box">
                     <span
                         className="caption"
                         data-aos="fade-up"
-                        data-aos-delay=""
+                        data-aos-delay="0"
                     >
                         "내가 MINI다"라는 자신감
                     </span>
@@ -180,7 +180,7 @@ const Home = () => {
                         className="car_box"
                         data-aos="fade-up-right"
                         data-aos-delay="900"
-                        data-aos-duration="2000"
+                        data-aos-duration="1000"
                     >
                         <div className="bg_car"></div>
                         <CarInfoBox
@@ -255,13 +255,13 @@ const Home = () => {
                 <div
                     className="bg_car"
                     data-aos="fade-right"
-                    data-aos-delay="600"
-                    data-aos-duration="3000"
+                    data-aos-delay="300"
+                    data-aos-duration="1000"
                 ></div>
                 <NewsSlider
                     data-aos="fade-right"
                     data-aos-delay="600"
-                    data-aos-duration="3000"
+                    data-aos-duration="1000"
                 />
             </section>
         </main>
