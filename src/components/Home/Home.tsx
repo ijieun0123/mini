@@ -2,8 +2,11 @@ import Button from "../Button/Button";
 import CarInfoBox from "../CarInfoBox/CarInfoBox";
 import EditionSlider from "../Slider/EditionSlider";
 import NewsSlider from "../Slider/NewsSlider";
+import { getImageUrl } from "../../utils/utils";
 
 const Home = () => {
+    const IntroSectioncarImgUrl = getImageUrl("/img/intro_section_car.png");
+
     return (
         <main>
             <section className="intro_section">
@@ -50,7 +53,13 @@ const Home = () => {
                         data-aos-duration="2000"
                         data-aos-delay="1200"
                     >
-                        <div className="bg_car"></div>
+                        <div className="img_box">
+                            <img
+                                src={IntroSectioncarImgUrl}
+                                alt="미니 자동차"
+                                className="car_img"
+                            />
+                        </div>
                         <CarInfoBox
                             maxPower="160(218) / 330"
                             range="300km"

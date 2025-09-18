@@ -33,11 +33,12 @@ main {
             .car_box {
                 @include flex_column;
 
-                .bg_car {
+                .img_box {
                     width: 170%;
-                    padding-bottom: 82%;
-                    background: url("/img/icon_section_car.png") no-repeat
-                        center/cover;
+                    max-width: 669px;
+
+                    .car_img {
+                    }
                 }
             }
         }
@@ -336,10 +337,13 @@ main {
                 .car_box {
                     gap: 15px;
 
-                    .bg_car {
+                    .img_box {
                         width: 100%;
-                        padding-bottom: 48%;
+                        max-width: 856px;
                         align-self: center;
+
+                        .car_img {
+                        }
                     }
                 }
             }
@@ -550,12 +554,11 @@ main {
                     gap: 35px;
                     margin-top: -100px;
 
-                    .bg_car {
+                    .img_box {
                         width: 856px;
-                        height: 413px;
-                        padding-bottom: 0;
-                        margin-right: -2%;
-                        align-self: center;
+
+                        .car_img {
+                        }
                     }
                 }
             }
@@ -666,9 +669,7 @@ main {
                         width: 78.125%;
 
                         .bg_digital {
-                            // padding-bottom: 56.25%;
                             padding-bottom: 0;
-                            width: 800px;
                             height: 450px;
                         }
                     }
@@ -676,32 +677,25 @@ main {
                         .bg_digital {
                         }
                         div {
-                            // padding-left: 12.402%;
-                            padding-left: 127px;
+                            padding-left: 16.402%;
 
                             b {
                             }
                             .paragraph {
-                                // width: 78.696%;
-                                width: 510px;
+                                width: 78.696%;
                             }
                         }
                     }
                     .right_contents {
-                        width: 800px;
-
                         .bg_digital {
                         }
                         .paragraph {
-                            // width: 74.696%;
-                            width: 510px;
-                            // margin-left: 6.296%;
-                            margin-left: 50px;
+                            width: 74.696%;
+                            margin-left: 6.296%;
                             padding-right: 0%;
                         }
                         .button {
-                            // margin-left: 6.296%;
-                            margin-left: 50px;
+                            margin-left: 6.296%;
                         }
                     }
                 }
@@ -725,7 +719,7 @@ main {
                 top: -300px;
                 left: auto;
                 right: 50%;
-                margin-right: 90px;
+                margin-right: 142px;
                 display: block;
                 width: 1612px;
                 height: 722px;
@@ -762,12 +756,13 @@ main {
                     width: auto;
                     margin-top: -230px;
 
-                    .bg_car {
+                    .img_box {
                         align-self: flex-end;
                         width: 1049px;
-                        height: 506px;
-                        padding-bottom: 0;
-                        margin-right: 0;
+                        max-width: 1049px;
+
+                        .car_img {
+                        }
                     }
                 }
             }
@@ -931,9 +926,10 @@ main {
             }
             .bg_car {
                 top: -130px;
-                left: -1120px;
+                right: 62.968%;
                 width: 1852px;
                 height: 830px;
+                margin-right: 0;
             }
         }
     }

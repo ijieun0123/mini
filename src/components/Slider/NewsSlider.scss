@@ -41,8 +41,11 @@
 
 @media (min-width: 1024px) {
     .news_section .swiper {
-        margin-left: 27.832% !important;
+        padding-left: 0 !important;
         overflow-x: hidden !important;
+        width: calc((100% - 928px) / 2 + 691px) !important;
+        margin-left: auto !important;
+        margin-right: 0 !important;
     }
     .news_section .swiper-pagination-fraction,
     .news_section .swiper-pagination-custom,
@@ -54,7 +57,7 @@
 
 @media (min-width: 1440px) {
     .news_section .swiper {
-        margin-left: 852px !important;
+        width: calc((100% - 1396px) / 2 + 806px) !important;
     }
     .news_section .swiper-pagination-fraction,
     .news_section .swiper-pagination-custom,
