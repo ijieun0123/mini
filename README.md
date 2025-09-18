@@ -1,69 +1,68 @@
-# React + TypeScript + Vite
+### ✨ **`mini` 사이트 리뉴얼 프로젝트**
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+반응형 디자인과 향상된 사용자 경험을 위한 리뉴얼 프로젝트입니다.
+https://ijieun0123.github.io/mini/
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+### 🚀 **프로젝트 동기**
 
-## Expanding the ESLint configuration
+기존 사이트의 오래된 디자인을 개선하고, 사용자 친화적인 인터페이스를 제공하기 위해 Vite와 React.js를 활용한 리뉴얼을 진행했습니다. 특히, 모바일에 최적화된 반응형 웹 디자인과 동적인 스크롤 애니메이션 효과에 중점을 두었습니다.
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+---
 
-```js
-export default tseslint.config([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+### 🖼️ **주요 기능 및 스크린샷**
 
-      // Remove tseslint.configs.recommended and replace with this
-      ...tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      ...tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      ...tseslint.configs.stylisticTypeChecked,
+#### desktop 1920
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+<video src="public/img/mini_animation.mov"></video>
+<img src="public/img/mini_1440.png">
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+#### tablet 1024
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+<img src="public/img/mini_1024.png" width="1024">
 
-export default tseslint.config([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+#### tablet 768
+
+<img src="public/img/mini_768.png" width="768">
+
+#### mobile 375
+
+<img src="public/img/mini_375.png" width="375">
+
+<br/>
+
+-   **반응형 웹 디자인:** 모든 기기에서 최적화된 화면을 제공합니다.
+-   **AOS (Animate On Scroll):** 스크롤 애니메이션 효과를 적용하여 동적인 사용자 경험을 선사합니다.
+-   **Swiper.js:** 유연한 슬라이드 기능을 구현하여 콘텐츠를 효율적으로 보여줍니다.
+
+---
+
+### 🛠️ **기술 스택**
+
+-   **언어:** `TypeScript`
+-   **프레임워크:** `React.js`
+-   **번들러:** `Vite`
+-   **스타일링:** `Styled-Components`, `SCSS`
+-   **패키지 매니저:** `Yarn`
+-   **애니메이션:** `AOS`
+-   **슬라이더:** `Swiper.js`
+
+---
+
+### 🗓️ **개발 기간**
+
+[총 8일] 2025. 09. 12 ~ 2025. 09. 19
+
+---
+
+### 📢 **향후 계획**
+
+-   추가적인 페이지 개발
+-   사이트 성능 최적화 및 Lighthouse 점수 개선
+
+---
+
+### 📄 **라이선스**
+
+이 프로젝트는 MIT 라이선스를 따릅니다.
