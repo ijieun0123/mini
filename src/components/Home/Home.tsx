@@ -65,7 +65,7 @@ const Home = () => {
             <section className="impact_section">
                 <div
                     className="bg_photo"
-                    data-aos="fade-right"
+                    data-aos="fade"
                     data-aos-duration="2000"
                     data-aos-delay="1200"
                 ></div>
