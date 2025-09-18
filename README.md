@@ -1,6 +1,6 @@
 ### ✨ **`mini` 사이트 리뉴얼 프로젝트**
 
-반응형 디자인과 향상된 사용자 경험을 위한 리뉴얼 프로젝트입니다.
+반응형 디자인과 향상된 사용자 경험을 위한 리뉴얼 프로젝트입니다.<br/>
 https://ijieun0123.github.io/mini/
 
 ---
@@ -15,7 +15,7 @@ https://ijieun0123.github.io/mini/
 
 #### desktop 1920
 
-<video src="public/img/mini_animation.mov"></video>
+<img src="public/img/mini_animation.gif">
 <img src="public/img/mini_1440.png">
 
 #### tablet 1024
