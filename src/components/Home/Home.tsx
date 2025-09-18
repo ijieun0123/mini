@@ -39,7 +39,7 @@ const Home = () => {
                         <Button
                             color="black"
                             data-aos="fade-up"
-                            data-aos-delay="900"
+                            data-aos-delay="600"
                         >
                             View More
                         </Button>
@@ -100,7 +100,7 @@ const Home = () => {
                     <Button
                         color="blue"
                         data-aos="fade-up"
-                        data-aos-delay="900"
+                        data-aos-delay="600"
                     >
                         View More
                     </Button>
@@ -193,13 +193,13 @@ const Home = () => {
                         </h2>
                     </div>
                     <div className="img_text_box">
-                        <div className="left_contents">
-                            <div
-                                className="bg_digital"
-                                data-aos="fade-down-right"
-                                data-aos-delay="300"
-                            ></div>
-                            <div data-aos="fade-up" data-aos-delay="1200">
+                        <div
+                            className="left_contents"
+                            data-aos="fade-down-right"
+                            data-aos-delay="300"
+                        >
+                            <div className="bg_digital"></div>
+                            <div>
                                 <b>MINI가 선보이는 혁신과 드라이빙의 융합</b>
                                 <p className="paragraph">
                                     주행 경험을 향상시키는 첨단 기술과
@@ -210,29 +210,19 @@ const Home = () => {
                                 </p>
                             </div>
                         </div>
-                        <div className="right_contents">
-                            <div
-                                className="bg_digital"
-                                data-aos="fade-up-left"
-                                data-aos-delay="600"
-                            ></div>
-                            <p
-                                className="paragraph"
-                                data-aos="fade-up"
-                                data-aos-delay="1200"
-                            >
+                        <div
+                            className="right_contents"
+                            data-aos="fade-up-left"
+                            data-aos-delay="300"
+                        >
+                            <div className="bg_digital"></div>
+                            <p className="paragraph">
                                 MINI의 새로운 오퍼레이팅 시스템 9(Operating
                                 System 9)은 새롭고 직관적인 경험을 제공합니다.
                                 운전자는 언제 어디서든 MINI와 연결되어 간단하게
                                 모든 것을 컨트롤할 수 있죠.
                             </p>
-                            <Button
-                                color="blue"
-                                data-aos="fade-up"
-                                data-aos-delay="1200"
-                            >
-                                View More
-                            </Button>
+                            <Button color="blue">View More</Button>
                         </div>
                     </div>
                 </div>
@@ -256,8 +246,8 @@ const Home = () => {
                 <div
                     className="bg_car"
                     data-aos="fade-right"
-                    data-aos-delay="300"
-                    data-aos-duration="7000"
+                    data-aos-delay="600"
+                    data-aos-duration="3000"
                 ></div>
                 <NewsSlider
                     data-aos="fade-right"
