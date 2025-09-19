@@ -9,6 +9,8 @@ interface ButtonProps {
 }
 
 const StyledButton = styled.a`
+    position: relative;
+    overflow: hidden;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -16,6 +18,7 @@ const StyledButton = styled.a`
     height: 40px;
     background: var(--blue-color);
     color: var(--white-color);
+    cursor: pointer;
 
     ${props =>
         props.color === "black" &&
@@ -32,6 +35,28 @@ const StyledButton = styled.a`
     @media (min-width: 768px) {
         width: 216px;
         height: 50px;
+    }
+
+    /* 빛 효과를 위한 의사 요소 */
+    &::after {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: -100%;
+        width: 50%;
+        height: 100%;
+        background: linear-gradient(
+            to right,
+            rgba(255, 255, 255, 0) 0%,
+            rgba(255, 255, 255, 0.5) 50%,
+            rgba(255, 255, 255, 0) 100%
+        );
+        transition: left 0.7s ease;
+    }
+
+    /* 호버 시 효과 적용 */
+    &:hover::after {
+        left: 100%;
     }
 `;
 

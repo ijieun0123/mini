@@ -105,6 +105,8 @@ main {
                         gap: 28px;
                         padding: 35px 8.108%;
                         box-shadow: $box_shadow_medium;
+                        background: #fff;
+                        transition: 0.3s;
 
                         .bg_icon {
                             width: 54px;
@@ -113,6 +115,11 @@ main {
                         p {
                             color: $black;
                             font-size: 18px;
+                        }
+
+                        &:hover {
+                            transform: translateY(4px);
+                            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
                         }
                     }
                 }
