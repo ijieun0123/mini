@@ -22,7 +22,7 @@ const Home = () => {
                         <h2
                             className="title"
                             data-aos="fade-up"
-                            data-aos-delay="300"
+                            data-aos-delay="200"
                         >
                             SMALL IN SIZE,
                             <br />
@@ -31,7 +31,7 @@ const Home = () => {
                         <p
                             className="paragraph"
                             data-aos="fade-up"
-                            data-aos-delay="600"
+                            data-aos-delay="400"
                         >
                             1959년부터 이어져 온 클래식한 매력과 고카트 드라이빙
                             감성,
@@ -42,7 +42,7 @@ const Home = () => {
                         <Button
                             color="black"
                             data-aos="fade-up"
-                            data-aos-delay="600"
+                            data-aos-delay="400"
                         >
                             View More
                         </Button>
@@ -51,7 +51,7 @@ const Home = () => {
                         className="car_box"
                         data-aos="fade-down-left"
                         data-aos-duration="1000"
-                        data-aos-delay="900"
+                        data-aos-delay="600"
                     >
                         <div className="img_box">
                             <img
@@ -66,7 +66,7 @@ const Home = () => {
                             acceleration="6.7"
                             topSpeed="170"
                             data-aos="fade-up"
-                            data-aos-duration="7500"
+                            data-aos-duration="5000"
                         />
                     </div>
                 </div>
@@ -76,7 +76,7 @@ const Home = () => {
                     className="bg_photo"
                     data-aos="fade"
                     data-aos-duration="3000"
-                    data-aos-delay="900"
+                    data-aos-delay="600"
                 ></div>
                 <div className="text_box">
                     <span
@@ -89,7 +89,7 @@ const Home = () => {
                     <h2
                         className="title"
                         data-aos="fade-up"
-                        data-aos-delay="300"
+                        data-aos-delay="200"
                     >
                         OWN
                         <br className="show_on_mobile" />
@@ -99,7 +99,7 @@ const Home = () => {
                     <p
                         className="paragraph"
                         data-aos="fade-up"
-                        data-aos-delay="600"
+                        data-aos-delay="400"
                     >
                         MINI는 단순한 이동 수단을 넘어, 당신의 라이프스타일과
                         가치를 대변합니다. 작은 차체에 담긴 강력한 성능과 세심한
@@ -109,7 +109,7 @@ const Home = () => {
                     <Button
                         color="blue"
                         data-aos="fade-up"
-                        data-aos-delay="600"
+                        data-aos-delay="400"
                     >
                         View More
                     </Button>
@@ -120,7 +120,7 @@ const Home = () => {
                     <h2 className="title" data-aos="fade-up">
                         MINI SERVICES
                     </h2>
-                    <ul data-aos="fade-up" data-aos-delay="300">
+                    <ul data-aos="fade-up" data-aos-delay="200">
                         <li>
                             <a href="#">
                                 <div className="bg_icon"></div>
@@ -161,7 +161,7 @@ const Home = () => {
                         <p
                             className="paragraph"
                             data-aos="fade-up"
-                            data-aos-delay="300"
+                            data-aos-delay="200"
                         >
                             탁월한 코너링을 자랑하는 CONVERTIBLE의 순수한
                             짜릿함을 경험해 보세요.
@@ -171,7 +171,7 @@ const Home = () => {
                         <Button
                             color="blue"
                             data-aos="fade-up"
-                            data-aos-delay="600"
+                            data-aos-delay="400"
                         >
                             Explore JCW
                         </Button>
@@ -179,7 +179,7 @@ const Home = () => {
                     <div
                         className="car_box"
                         data-aos="fade-up-right"
-                        data-aos-delay="900"
+                        data-aos-delay="600"
                         data-aos-duration="1000"
                     >
                         <div className="bg_car"></div>
@@ -205,7 +205,7 @@ const Home = () => {
                         <div
                             className="left_contents"
                             data-aos="fade-down-right"
-                            data-aos-delay="300"
+                            data-aos-delay="200"
                         >
                             <div className="bg_digital"></div>
                             <div>
@@ -222,7 +222,7 @@ const Home = () => {
                         <div
                             className="right_contents"
                             data-aos="fade-up-left"
-                            data-aos-delay="300"
+                            data-aos-delay="200"
                         >
                             <div className="bg_digital"></div>
                             <p className="paragraph">
@@ -243,8 +243,8 @@ const Home = () => {
                     </h2>
                     <EditionSlider
                         data-aos="fade-left"
-                        data-aos-delay="300"
-                        data-aos-duration="3000"
+                        data-aos-delay="200"
+                        data-aos-duration="2000"
                     />
                 </div>
             </section>
@@ -255,12 +255,12 @@ const Home = () => {
                 <div
                     className="bg_car"
                     data-aos="fade-right"
-                    data-aos-delay="300"
+                    data-aos-delay="200"
                     data-aos-duration="1000"
                 ></div>
                 <NewsSlider
                     data-aos="fade-right"
-                    data-aos-delay="600"
+                    data-aos-delay="400"
                     data-aos-duration="1000"
                 />
             </section>
