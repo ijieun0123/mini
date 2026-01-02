@@ -1,7 +1,7 @@
-import Button from "../Button/Button";
-import CarInfoBox from "../CarInfoBox/CarInfoBox";
-import EditionSlider from "../Slider/EditionSlider";
-import NewsSlider from "../Slider/NewsSlider";
+import Button from "../../components/Button/Button";
+import CarInfoBox from "../../components/CarInfoBox/CarInfoBox";
+import EditionSlider from "../../components/Slider/EditionSlider";
+import NewsSlider from "../../components/Slider/NewsSlider";
 import { getImageUrl } from "../../utils/utils";
 
 const Home = () => {
